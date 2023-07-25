@@ -46,7 +46,7 @@ function reducer(state, action) {
         ...state,
         answer: action.payload,
         points:
-          action.payload === question.correctOptions
+          action.payload === question.correctOption
             ? state.points + question.points
             : state.points,
       };
